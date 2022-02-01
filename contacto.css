@@ -15,9 +15,9 @@ header{
     top: 0;
     z-index: 1;
     width: 100%;
-    background-color: black;
-    font-size: 20px;
-    border-style:solid
+    /*gradiente*/
+    background-image: linear-gradient(to bottom, black, rgba(5,5,5,0.185));
+
 
 }
 
@@ -43,6 +43,9 @@ header{
     color: #EDCB54;
     padding-left: 20px;
     text-transform: uppercase;
+    /*transformacion*/
+    transform: rotate (-1deg);
+    font-size: 25px;
 
 }
 
@@ -87,15 +90,19 @@ header{
 
 }
 
+/*efectos*/
 .content_nav li a{
     
     text-decoration: none;
     color: white;
     position: relative;
+    font-size: 20px;
+    transition: font-size 0,9s;
 
 }
 .content_nav li a:hover{
-    background-color: grey;
+    background-color: #EDCB54;
+    font-size: 30px;
 }
 
 /*media queries*/
@@ -148,8 +155,10 @@ header{
 
 /*fin del header*/
 
+
 body{
-    background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)) , url(../imagenes/fondobici2.jpg);
+    /*gradiente*/
+    background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)) , url(./imagenes/fondobici2.jpg);
 }
 
 /*formulario*/

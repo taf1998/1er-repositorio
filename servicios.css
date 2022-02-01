@@ -15,9 +15,9 @@ header{
     top: 0;
     z-index: 1;
     width: 100%;
-    background-color: black;
-    font-size: 20px;
-    border-style:solid
+    /*gradiente*/
+    background-image: linear-gradient(to bottom, black, rgba(5,5,5,0.185));
+
 
 }
 
@@ -43,6 +43,9 @@ header{
     color: #EDCB54;
     padding-left: 20px;
     text-transform: uppercase;
+    /*transformacion*/
+    transform: rotate (-1deg);
+    font-size: 25px;
 
 }
 
@@ -87,15 +90,19 @@ header{
 
 }
 
+/*efectos*/
 .content_nav li a{
     
     text-decoration: none;
     color: white;
     position: relative;
+    font-size: 20px;
+    transition: font-size 0,9s;
 
 }
 .content_nav li a:hover{
-    background-color: grey;
+    background-color: #EDCB54;
+    font-size: 30px;
 }
 
 /*media queries*/
@@ -190,6 +197,13 @@ body{
     text-align: center;
     box-sizing: border-box;
     border: 1px solid #ddd;
+    border-style: solid;
+    /*transicion*/
+    transition: height widht 2s;
+}
+.featured-product-item:hover{
+    height: 350px;
+    width: 480px;
 }
 
 .featured-product-item-image {
